@@ -1,4 +1,5 @@
 from auctionTypes import AuctionTypes
+from secret import *
 import discord
 from discord import message
 from discord import channel
@@ -52,4 +53,4 @@ async def on_message(message):
             # setting an auction game
             await message.channel.send("game purse number_of_teams min_bid maximum_players_per_team")
 
-client.run('ODczNTU2NjI1MjI1NTU2MDgw.YQ6JAQ.AQSjBNYI6eM9IzPAj8ZytfrT45o')
+client.run(bot_token)
